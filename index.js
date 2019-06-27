@@ -44,10 +44,20 @@ function viewCart() {
      
 //   }
    
-  
-// }
-
-    console.log(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+   
+     console.log("this is the view cart========");
+  console.log(cart);
+ 
+ if(cart.length===0){
+    console.log( "Your shopping cart is empty.");
+ }else{ 
+    var string = `In your cart, you have `;
+    var next=``;
+   for(var i = 0;i<cart.length;i++){
+     
+     if(cart.length ===1){
+       
+       console.log(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
       
      }
    else{
@@ -73,6 +83,7 @@ function viewCart() {
    
   
  }
+  
 }
 
 function total() {
