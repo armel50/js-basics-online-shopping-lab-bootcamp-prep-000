@@ -68,7 +68,6 @@ function viewCart() {
         next= `, `;
         string+=`${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
       }
-      //string+=`${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
 
     }
     
