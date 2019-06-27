@@ -79,7 +79,7 @@ function viewCart() {
      
    }
    
-   console.log(string);
+   return string;
    
   
  }
