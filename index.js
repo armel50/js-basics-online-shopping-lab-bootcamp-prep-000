@@ -47,7 +47,7 @@ function viewCart() {
    
  
  if(cart.length===0){
-    console.log( "Your shopping cart is empty.");
+    return "Your shopping cart is empty.";
  }else{ 
     var string = `In your cart, you have `;
     var next=``;
@@ -55,7 +55,7 @@ function viewCart() {
      
      if(cart.length ===1){
        
-       console.log(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`;
       
      }
    else{
