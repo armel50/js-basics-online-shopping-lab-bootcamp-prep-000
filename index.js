@@ -45,8 +45,6 @@ function viewCart() {
 //   }
    
    
-     console.log("this is the view cart========");
-  console.log(cart);
  
  if(cart.length===0){
     console.log( "Your shopping cart is empty.");
