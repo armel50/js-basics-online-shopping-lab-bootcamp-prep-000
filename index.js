@@ -46,6 +46,33 @@ function viewCart() {
    
   
 // }
+
+    console.log(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`)
+      
+     }
+   else{
+      if(i===cart.length - 2){
+        next = `, and ${cart[i+1].itemName } at $${cart[i+1].itemPrice}`;
+        string+= `${cart[i].itemName} at $${cart[i].itemPrice}${next}.`;
+        break;
+      }
+      if(i<cart.length -2){
+        next= `, `;
+        string+=`${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
+      }
+      //string+=`${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
+
+    }
+    
+    
+  
+     
+   }
+   
+   console.log(string);
+   
+  
+ }
 }
 
 function total() {
