@@ -19,33 +19,33 @@ function addToCart(item) {
 }
  
 function viewCart() {
- var string;
- if(cart.length===0){
-    return "Your shopping cart is empty.";
- }else{ 
-    var next = "";
+// var string;
+// if(cart.length===0){
+//     return "Your shopping cart is empty.";
+// }else{ 
+//     var next = "";
    
-   for(var i = 0;i<cart.length;i++){
+//   for(var i = 0;i<cart.length;i++){
      
-     if(cart.length ===1){
-       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`
-     }
-   else if(i===cart.length -2){
-      next =`, and ${cart[i+1].itemName} at $${cart[i+1].itemPrice}.`
+//     if(cart.length ===1){
+//       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`
+//     }
+//   else if(i===cart.length -2){
+//       next =`, and ${cart[i+1].itemName} at $${cart[i+1].itemPrice}.`
      
-      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
+//       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
      
    
-    }else{
-      next =`, ${cart[i+1].itemName} at $${cart[i+1].itemPrice} `;
-        return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
-    }
+//     }else{
+//       next =`, ${cart[i+1].itemName} at $${cart[i+1].itemPrice} `;
+//         return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}${next}`;
+//     }
   
      
-   }
+//   }
    
   
- }
+// }
 }
 
 function total() {
